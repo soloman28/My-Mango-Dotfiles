@@ -3,7 +3,7 @@ This is for Mango users. Feel free to copy my waybar!
 
 <img width="1366" height="768" alt="Screenshot_2026-08-14_17-21-10" src="https://github.com/user-attachments/assets/e031716e-9216-4a4a-b03a-05eed28d290e" />
 
-**NOTE:** Some of these packages require paru and I'm clueless at making install scripts, but as long as you have MangoWM and a file manager installed, copy these folders into your user directory and install the following below.
+**NOTE:** Some of these packages require paru and I'm clueless at making install scripts, but as long as you have MangoWM and a file manager installed, copy these folders into your user directory and install the following below. I'm sorry.
 
 ### Dependencies:
 1. qt5ct-kde
