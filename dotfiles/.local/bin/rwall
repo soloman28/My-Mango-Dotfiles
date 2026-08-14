@@ -1,10 +1,5 @@
 #!/usr/bin/zsh
 
-# ln -sfn "$(awww query -n wallpaper -j | jq -r '.[].[0].displaying.image')" ~/.config/walls/assets/current_wall
-local file=$(print -rl -- ~/.config/walls/*(.) | shuf -n 1)
-
-ln -sfn "${file:A}" ~/.config/walls/assets/current_wall
+local file=$(print -rl -- ~/Pictures/Wallpapers/*(.) | shuf -n 1)
 matugen image "$file" -m dark  --source-color-index 0 -q
-magick -monitor ~/.config/walls/assets/current_wall -blur 0x12 ~/.config/walls/assets/current_wall_blurred
 awww img -t random --transition-duration 1 $file
-awww img -t random --transition-duration 1 ~/.config/walls/assets/current_wall_blurred
