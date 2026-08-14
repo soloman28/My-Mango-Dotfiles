@@ -1,0 +1,15 @@
+/* ROUNDED THEME FOR ROFI */
+/* Author: Newman Sanchez (https://github.com/newmanls) */
+
+@theme "colors.rasi"
+
+* {
+    bg0:    @surface;
+    bg1:    @surface-container;
+    bg2:    @surface-container-high;
+    bg3:    @surface-bright;
+    fg0:    #FFFFFF;
+    fg1:    #FFFFFF;
+    fg2:    #FFFFFF;
+    fg3:    @surface-bright;
+}

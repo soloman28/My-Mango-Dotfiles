@@ -1,0 +1,29 @@
+@import "colors.css";
+
+.notification {
+    background: @background;
+    padding: 6px 6px 6px 6px;
+    border-radius: 0px;
+    border: 1px solid @primary;
+}
+
+.notification-group {
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.control-center,
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+    opacity: 1;
+    background: @background;
+    border-radius: 0px;
+}
+
+.close-button {
+    background: @primary;
+    color: @background;
+    text-shadow: none;
+    padding: 0;
+    border-radius: 0px;
+}

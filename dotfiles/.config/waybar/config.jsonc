@@ -1,0 +1,95 @@
+{
+    "layer": "top",
+
+    "modules-left": ["mango/workspaces", "mango/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["battery", "bluetooth", "network", "pulseaudio", "custom/clipboard", "custom/notification", "tray", "custom/power"],
+
+    "mango/workspaces": {
+        "on-click": "activate",
+        "on-scroll-up": "mmsg dispatch viewtoleft",
+        "on-scroll-down": "mmsg dispatch viewtoright"
+    },
+
+    "mango/window": {
+        "max-length": 40,
+        "escape": true,
+        "tooltip": false
+    },
+    "battery": {
+        "interval": 60,
+        "format": "{icon} {capacity}%",
+        "format-icons": {
+            "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+            "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+        }
+    },
+    "clock": {
+        "format": "{:%d %b %H:%M}",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "on-click": "kitty calcure"
+    },
+    "tray": {
+        "spacing": 6
+    },
+    "pulseaudio": {
+	      "format": "{icon}  {volume}%",
+	      "format-bluetooth": "{icon}  {volume}%",
+	      "format-muted": "  {volume}%",
+	      "format-icons": {
+		    "default": ["", "", ""]
+	      },
+	      "scroll-step": 1,
+	      "on-click": "pavucontrol"
+    },
+    "network": {
+        "interface": "wlan0",
+	      "format": "{ifname}",
+	      "format-wifi": "  {essid}",
+	      "format-ethernet": "  {ifname}",
+          "format-disconnected": "Disconnected", //An empty format will hide the module.
+	      "tooltip-format": "{ifname}",
+	      "tooltip-format-wifi":  "  {essid}",
+	      "tooltip-format-ethernet": "  {ifname}",
+	      "tooltip-format-disconnected": "Disconnected",
+	      "max-length": 40,
+	      "on-click": "kitty nmtui"
+    },
+    "bluetooth": {
+      "format": "<span size='12pt'></span>",
+      "format-disabled": "", // an empty format will hide the module
+      "format-connected": " {num_connections}",
+      "tooltip-format": "{controller_alias}\t{controller_address}",
+      "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+      "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+      "on-click": "blueman-manager"
+    },
+    "custom/clipboard": {
+        "format": "<span size='12pt'></span>",
+        "on-click": "nwg-clipman"
+    },
+    "custom/notification": {
+      "tooltip": true,
+      "format": "<span size='12pt'>{icon}</span>",
+      "format-icons": {
+        "notification": "󱅫",
+        "none": "󰂜",
+        "dnd-notification": "󰂠",
+        "dnd-none": "󰪓",
+        "inhibited-notification": "󰂛",
+        "inhibited-none": "󰪑",
+        "dnd-inhibited-notification": "󰂛",
+        "dnd-inhibited-none": "󰪑"
+      },
+      "return-type": "json",
+      "exec-if": "which swaync-client",
+      "exec": "swaync-client -swb",
+      "on-click": "swaync-client -t -sw",
+      "on-click-right": "swaync-client -d -sw",
+      "escape": true
+   },
+   "custom/power": {
+     "format": "<span size='14pt'>󰐥</span>",
+     "on-click": "wlogout",
+   },
+}

@@ -1,0 +1,8 @@
+@import 'colors.css';
+
+
+/* Remove csd shadows */
+decoration, decoration:backdrop
+{
+    box-shadow: none;
+}

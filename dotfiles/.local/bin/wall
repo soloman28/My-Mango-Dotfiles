@@ -1,0 +1,10 @@
+#!/usr/bin/zsh
+
+# ln -sfn "$(awww query -n wallpaper -j | jq -r '.[].[0].displaying.image')" ~/.config/walls/assets/current_wall
+if [ "$#" -le 0 ]; then echo "pick an img"; exit 2; fi
+[[ -f "$1" ]] && magick identify "$1" &>/dev/null || { echo "not an img"; exit 2; }
+
+ln -sfn "${1:A}" ~/.config/walls/assets/current_wall
+matugen image "$1" -m dark  --source-color-index 0 -q
+magick -monitor ~/.config/walls/assets/current_wall -blur 0x8 ~/.config/walls/assets/current_wall_blurred
+awww img -t random --transition-duration 1 $1

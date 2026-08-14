@@ -1,0 +1,116 @@
+@import "colors.css";
+
+* {
+/* `otf-font-awesome` is required to be installed for icons */
+font-family: JetBrainsMono Nerd Font;
+font-weight: normal;
+font-size: 12px;
+}
+
+window#waybar {
+    background-color: @background;
+    color: white;
+}
+
+#workspaces {
+  transition: all 150ms ease-out;
+  border-radius: 0px;
+  padding: 0px 0px;
+  background: @surface_container;
+  margin: 6px 6px 6px 6px;
+}
+
+#workspaces button {
+  transition: all 150ms ease-out;
+  min-width: 5px;
+  padding: 0px 10px;
+  margin: 0px 0px 0px 0px;
+  border-radius: 0px;
+  color: white;
+}
+
+#workspaces button.active {
+  transition: all 150ms ease-out;
+  background: @primary;
+  color: @background;
+}
+
+#workspaces button:hover {
+    transition: all 150ms ease-out;
+    background: @surface_bright;
+    border-color: transparent;
+    color: white;
+}
+
+#window {
+  border-radius: 0px;
+  padding: 0px 8px;
+  background: @surface_container;
+  margin: 6px 0px 6px 0px;
+}
+
+#clock {
+  border-radius: 0px;
+  padding: 6px 6px;
+  background: @surface_container;
+  margin: 6px 6px 6px 6px;
+}
+
+#battery {
+  border-radius: 0px;
+  padding: 6px 6px;
+  background: @surface_container;
+  margin: 6px 6px 6px 6px;
+}
+
+#bluetooth {
+  border-radius: 0px;
+  padding: 0px 6px;
+  background: @surface_container;
+  margin: 6px 0px 6px 0px;
+}
+
+#network {
+  border-radius: 0px;
+  padding: 6px 6px;
+  background: @surface_container;
+  margin: 6px 6px 6px 6px;
+}
+
+#pulseaudio {
+  border-radius: 0px;
+  padding: 6px 6px;
+  background: @surface_container;
+  margin: 6px 6px 6px 0px;
+}
+
+#custom-clipboard {
+  border-radius: 0px;
+  min-width: 12px;
+  padding: 0px 8px;
+  background: @surface_container;
+  margin: 6px 0px 6px 0px;
+}
+
+#custom-notification {
+  border-radius: 0px;
+  min-width: 12px;
+  padding: 0px 8px;
+  background: @surface_container;
+  margin: 6px 6px 6px 0px;
+}
+
+#tray {
+  border-radius: 0px;
+  padding: 6px 6px;
+  background: @surface_container;
+  margin: 6px 6px 6px 0px;
+}
+
+#custom-power {
+  border-radius: 0px;
+  min-width: 12px;
+  padding: 0px 8px;
+  background: @surface_container;
+  margin: 6px 6px 6px 0px;
+}

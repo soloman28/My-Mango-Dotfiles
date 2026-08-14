@@ -1,0 +1,39 @@
+{
+  "surface": "#141218",
+  "surface_low": "#1c1b20",
+  "surface_container": "#211f24",
+  "surface_high": "#2b292f",
+  "surface_highest": "#36343a",
+
+  "on_surface": "#e6e1e9",
+  "on_surface_variant": "#cac4cf",
+  "outline": "#938f99",
+  "outline_variant": "#48454e",
+
+  "primary": "#cebdfe",
+  "on_primary": "#35275d",
+  "primary_container": "#4c3e76",
+  "on_primary_container": "#e8ddff",
+
+  "secondary": "#cbc3dc",
+  "secondary_container": "#494458",
+  "on_secondary_container": "#e8def8",
+
+  "tertiary": "#efb8c9",
+  "tertiary_container": "#633b49",
+
+  "error": "#ffb4ab",
+  "error_container": "#93000a",
+
+  "selection_bg": "#cebdfe33",
+  "word_highlight": "#cbc3dc33",
+  "word_highlight_strong": "#efb8c933",
+
+  "cursor_block": "#cebdfe",
+  "cursor_beam": "#efb8c9",
+  "cursor_underline": "#cbc3dc",
+
+  "git_added": "#cebdfe",
+  "git_modified": "#cbc3dc",
+  "git_deleted": "#ffb4ab"
+}
