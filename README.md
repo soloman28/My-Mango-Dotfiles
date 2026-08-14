@@ -6,36 +6,37 @@ Note that I use CachyOS at the time making this dotfile but you can use other Ar
 **NOTE:** Some of these packages require paru and I'm clueless at making install scripts, but as long as you have MangoWM and a file manager installed, copy these folders into your user directory and install the following below. I'm sorry.
 
 ### Dependencies:
-1. qt5ct-kde
-2. qt6ct-kde
-3. archlinux-xdg-menu
-4. libadwaita
-5. adw-gtk-theme
-6. papirus-icon-theme
-7. papirus-folders
-8. udev-block-notify
-9. wlr-dpms
+1. libadwaita
+2. papirus-icon-theme
 
 ### Must be installed:
-1. MangoWM
-2. xdg-desktop-portal-wlr
-3. swaylock-effects
-4. swayidle
-5. swaync
-6. awww
-7. waypaper
-8. pavucontrol
-9. nwg-look
-10. nwg-clipman
-11. nmtui
-12. blueman
-13. calcure
-14. waybar-git
-15. matugen
-16. rofi
-17. kitty
-18. fastfetch
+1. swaylock-effects
+2. swayidle
+3. swaync
+4. awww
+5. pavucontrol
+6. blueman
+7. matugen
+8. rofi
+9. kitty
+10. fastfetch
 
 ### Optional:
 1. gpu-screen-recorder
 2. gpu-screen-recorder-ui
+
+### Requires YAY or manual install (For up-to-date reasons)
+1. qt5ct-kde
+2. qt6ct-kde
+3. archlinux-xdg-menu
+4. papirus-folders
+5. udev-block-notify
+6. wlr-dpms
+7. mangowm-git
+8. xdg-desktop-portal-wlr
+9. waypaper
+10. nwg-look
+11. nwg-clipman
+12. nmtui
+13. calcure
+14. waybar-git
