@@ -19,7 +19,8 @@ Note that I use CachyOS at the time making this dotfile but you can use other Ar
 7. matugen
 8. rofi
 9. kitty
-10. fastfetch
+10. neovim
+11. fastfetch
 
 ### Optional:
 1. gpu-screen-recorder
