@@ -1,7 +1,7 @@
 # My Mango Dotfiles
 This is for Mango users. Feel free to copy my waybar!
 <img width="1366" height="768" alt="Screenshot_2026-08-14_17-21-10" src="https://github.com/user-attachments/assets/e031716e-9216-4a4a-b03a-05eed28d290e" />
-Dependencies:
+### Dependencies:
 1. qt5ct-kde
 2. qt6ct-kde
 3. archlinux-xdg-menu
@@ -12,7 +12,7 @@ Dependencies:
 8. udev-block-notify
 9. wlr-dpms
 
-Must be installed:
+### Must be installed:
 1. swaylock-effects
 2. swayidle
 3. swaync
@@ -30,6 +30,6 @@ Must be installed:
 15. kitty
 16. Fastfetch
 
-Optional:
+### Optional:
 1. gpu-screen-recorder
 2. gpu-screen-recorder-ui
