@@ -1,0 +1,54 @@
+# Font
+font="JetBrainsMono Nerd Font Mono Regular"
+
+# Screenshots
+screenshots
+
+# Clock
+clock
+timestr=%R
+datestr=%a, %e %B
+
+# Indicator
+indicator
+indicator-radius=100
+indicator-thickness=7
+indicator-caps-lock
+
+# Effects
+effect-blur=7x5
+effect-vignette=0.5:0.5
+
+# Color
+ring-color=ffffff
+ring-clear-color=ffffff
+ring-caps-lock-color=ffffff
+ring-ver-color=ffffff
+ring-wrong-color=ffffff
+
+inside-color=00000088
+inside-clear-color=00000088
+inside-caps-lock-color=00000088
+inside-ver-color=00000088
+inside-wrong-color=00000088
+
+bs-hl-color=888888
+caps-lock-key-hl-color=888888
+key-hl-color=888888
+
+line-color=00000000
+line-clear-color=00000000
+line-caps-lock-color=00000000
+line-ver-color=00000000
+line-wrong-color=00000000
+
+separator-color=00000000
+
+text-color=ffffff
+text-clear-color=ffffff
+text-caps-lock-color=ffffff
+text-ver-color=ffffff
+text-wrong-color=ffffff
+
+# Fade
+fade-in=1
