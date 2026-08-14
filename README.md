@@ -29,7 +29,6 @@ This is for Mango users. Feel free to copy my waybar!
 14. rofi
 15. kitty
 16. Fastfetch
-17. GNU Stow
 
 ### Optional:
 1. gpu-screen-recorder
