@@ -156,6 +156,17 @@ yayInstallPackages() {
     echo "Installing packages with Yay..."
     echo
 
+    sudo -u "$SUDO_USER" yay -Sy --noconfirm \
+        qt5ct-kde \
+        qt6ct-kde \
+        calcure \
+        papirus-folders \
+        udev-block-notify \
+        wlr-dpms \
+        mangowm-git \
+        nmtui-go \
+        waybar-git \
+
     yay -S --noconfirm \
         kitty \
         matugen \
@@ -170,20 +181,12 @@ yayInstallPackages() {
         rofi \
         neovim \
         fastfetch \
-        qt5ct-kde \
-        qt6ct-kde \
         archlinux-xdg-menu \
-        papirus-folders \
-        udev-block-notify \
-        wlr-dpms \
-        mangowm-git \
         xdg-desktop-portal-wlr \
         waypaper \
         nwg-look \
         nwg-clipman \
-        nmtui-go \
-        calcure \
-        waybar-git
+        --overwrite "*"
 
     if [[ $? -ne 0 ]]; then
         echo
@@ -202,6 +205,17 @@ paruInstallPackages() {
     echo "Installing packages with Paru..."
     echo
 
+    sudo -u "$SUDO_USER" paru -Sy --noconfirm \
+        qt5ct-kde \
+        qt6ct-kde \
+        calcure \
+        papirus-folders \
+        udev-block-notify \
+        wlr-dpms \
+        mangowm-git \
+        nmtui-go \
+        waybar-git \
+
     paru -S --noconfirm \
         kitty \
         matugen \
@@ -216,20 +230,12 @@ paruInstallPackages() {
         rofi \
         neovim \
         fastfetch \
-        qt5ct-kde \
-        qt6ct-kde \
         archlinux-xdg-menu \
-        papirus-folders \
-        udev-block-notify \
-        wlr-dpms \
-        mangowm-git \
         xdg-desktop-portal-wlr \
         waypaper \
         nwg-look \
         nwg-clipman \
-        nmtui-go \
-        calcure \
-        waybar-git
+        --overwrite "*"
 
     if [[ $? -ne 0 ]]; then
         echo
@@ -342,6 +348,7 @@ else
     installPackageManagerCheck
 fi
 
+askDotfiles
 askBackup
 
 clear
