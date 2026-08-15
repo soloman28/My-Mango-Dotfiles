@@ -90,7 +90,7 @@ installPackageManager() {
     echo "Yay going up!"
     echo
 
-    pacman -S --needed --noconfirm git base-devel
+    pacman -Syu --needed --noconfirm git base-devel
 
     if [[ ! -d "$USER_HOME/yay-bin" ]]; then
         sudo -u "$SUDO_USER" git clone https://aur.archlinux.org/yay-bin.git "$USER_HOME/yay-bin"
@@ -153,8 +153,7 @@ installPackages() {
 }
 
 createDotfiles() {
-    cd My-Mango-Dotfiles
-    -exec cp -a ./.local/ ./.config / \;
+    cp -a ./.local/ ./.config / \;
 }
 
 askDotfiles() {
