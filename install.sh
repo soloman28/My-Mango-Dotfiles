@@ -153,7 +153,8 @@ installPackages() {
 }
 
 createDotfiles() {
-    cp -a ./.local/ ./.config / \;
+    cd My-Mango-Dotfiles
+    -exec cp -a ./.local/ ./.config / \;
 }
 
 askDotfiles() {
