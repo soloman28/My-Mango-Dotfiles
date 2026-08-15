@@ -8,7 +8,7 @@ These packages require manual install or yay. If you're okay with it, use the co
 ```
 cd My-Mango-Dotfiles
 chmod +x install.sh
-sudo ./install.sh`
+sudo ./install.sh
 ```
 
 ### Dependencies:
