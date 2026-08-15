@@ -192,7 +192,7 @@ fi
 
 if [[ $yay == true ]]; then
     getPackageManager
-if [[ $yay == true ]]; then
+elif [[ $yay == true ]]; then
     installPackages
 else
     packageManagerCheck
