@@ -4,12 +4,7 @@ Note that I use CachyOS at the time making this dotfile but you can use other Ar
 <img width="1366" height="768" alt="Screenshot_2026-08-14_17-21-10" src="https://github.com/user-attachments/assets/e031716e-9216-4a4a-b03a-05eed28d290e" />
 
 ### Installation
-These packages require manual install or yay. If you're okay with it, use the commands below.
-```
-cd My-Mango-Dotfiles
-chmod +x install.sh
-sudo ./install.sh
-```
+These packages require manual install or yay. Copy the `.config` and `.local` folders into the user directory and install the packages manually. I don't have an install script for this one. My apologies.
 
 ### Dependencies:
 1. libadwaita
