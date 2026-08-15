@@ -1,0 +1,5 @@
+#!/usr/bin/zsh
+
+local file=$(print -rl -- ~/Pictures/Wallpapers/*(.) | shuf -n 1)
+matugen image "$file" -m dark  --source-color-index 0 -q
+awww img -t random --transition-duration 1 $file

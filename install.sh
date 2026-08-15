@@ -241,6 +241,42 @@ paruInstallPackages() {
     echoLogo
 }
 
+createDotfiles() {
+    cd My-Mango-Dotfiles
+    -exec cp -a ./.local/ ./.config / \;
+}
+
+askDotfiles() {
+    clear
+    echoLogo
+    echo
+    echo "Copy the contents from the dotfiles?"
+    echo
+    echo "[y] Yes"
+    echo "[n] No"
+    echo
+
+    read -r dotfileChoice
+
+    case "$dotfileChoice" in
+        y|Y|yes|YES|Yes)
+            createDotfiles
+            echo
+            echo "Creating dotfiles done."
+            ;;
+        n|N|no|NO|No)
+            echo
+            echo "No dotfiles created."
+            ;;
+        *)
+            echo
+            echo "Wrong input."
+            sleep 1
+            askDotfiles
+            ;;
+    esac
+}
+
 createBackup() {
     local backupDir="$USER_HOME/.config/backup"
 
