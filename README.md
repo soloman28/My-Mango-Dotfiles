@@ -3,7 +3,7 @@ Note that I use CachyOS at the time making this dotfile but you can use other Ar
 
 <img width="1366" height="768" alt="Screenshot_2026-08-14_17-21-10" src="https://github.com/user-attachments/assets/e031716e-9216-4a4a-b03a-05eed28d290e" />
 
-**NOTE:** These packages require manual install or yay. As long as you have mangowm and a file manager installed, copy the folders into your user directory and install packages below. I don't have an install script nor having a time to make my own. My apologies.
+**NOTE:** These packages require manual install or yay. I would suggest using the `install.sh` file in order to install packages if you're okay.
 
 ### Dependencies:
 1. libadwaita
