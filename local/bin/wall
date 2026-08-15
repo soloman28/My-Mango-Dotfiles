@@ -1,4 +1,0 @@
-#!/usr/bin/zsh
-
-matugen image "$1" -m dark  --source-color-index 0 -q
-awww img -t random --transition-duration 1 $1
