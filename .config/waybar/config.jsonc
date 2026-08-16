@@ -53,7 +53,7 @@
 	      "tooltip-format-ethernet": "  {ifname}",
 	      "tooltip-format-disconnected": "Disconnected",
 	      "max-length": 40,
-	      "on-click": "kitty nmtui"
+	      "on-click": "nmrs"
     },
     "bluetooth": {
       "format": "<span size='12pt'></span>",

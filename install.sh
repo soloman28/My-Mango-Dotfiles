@@ -27,7 +27,7 @@ case "$answer" in
         yay -Syu qt5ct-kde qt6ct-kde calcure papirus-folders udev-block-notify wlr-dpms mangowm-git waybar-git nmtui-go --noconfirm
 
         # clipboard, bluetooth, utils
-        yay -S blueman, nmtui, nwg-clipman pavucontrol --noconfirm
+        yay -S blueman nmrs nwg-clipman pavucontrol --noconfirm
 
         # desktop
         yay -S awww swaync swayidle swaylock-effects papirus-icon-theme --noconfirm
@@ -35,8 +35,8 @@ case "$answer" in
         # desktop tools
         yay -S matugen waypaper nwg-look kitty neovim fastfetch --noconfirm
 
-        # other depenndencies
-        yay -S libadwaita archlinux-xdg-menu wlr-dpms xdg-desktop-portal-wlr --noconfirm
+        # other dependencies
+        yay -S libadwaita archlinux-xdg-menu wlr-dpms xdg-desktop-portal-wlr bibata-cursor-theme ttf-jetbrains-mono-nerd --noconfirm
         ;;
     ""|[Nn]|[Oo])
         clear

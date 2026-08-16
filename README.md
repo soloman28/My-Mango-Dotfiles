@@ -26,6 +26,7 @@ cd My-Mango-Dotfiles
 9. kitty
 10. neovim
 11. fastfetch
+12. ttf-jetbrains-mono-nerd
 
 ### Optional:
 1. gpu-screen-recorder
@@ -43,6 +44,7 @@ cd My-Mango-Dotfiles
 9. waypaper
 10. nwg-look
 11. nwg-clipman
-12. nmtui
+12. nmrs
 13. calcure
 14. waybar-git
+15. bibata-cursor-theme
