@@ -24,7 +24,7 @@ case "$answer" in
         rm -rf go yay
 
         # Syu
-        yay -Syu qt5ct-kde qt6ct-kde calcure papirus-folders udev-block-notify wlr-dpms mangowm-git waybar-git nmtui-go --noconfirm
+        yay -Syu qt5ct-kde qt6ct-kde calcure papirus-folders udev-block-notify wlr-dpms mangowm-git waybar-git --noconfirm
 
         # clipboard, bluetooth, utils
         yay -S blueman nmrs nwg-clipman pavucontrol --noconfirm
