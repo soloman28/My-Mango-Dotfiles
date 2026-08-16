@@ -72,3 +72,5 @@ esac
 
 clear
 printf "All done! Thank you for using my dotfiles!"
+echo
+echo
