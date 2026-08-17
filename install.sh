@@ -23,20 +23,17 @@ case "$answer" in
         cd ..
         rm -rf go yay
 
-        # Syu
-        yay -Syu qt5ct-kde qt6ct-kde calcure papirus-folders udev-block-notify wlr-dpms mangowm-git waybar-git --noconfirm
-
         # clipboard, bluetooth, utils
         yay -S blueman nmrs nwg-clipman pavucontrol --noconfirm
 
         # desktop
-        yay -S awww swaync swayidle swaylock-effects papirus-icon-theme --noconfirm
+        yay -S mangowm-git waybar-git awww swaync swayidle swaylock-effects papirus-icon-theme papirus-folders --noconfirm
 
         # desktop tools
-        yay -S matugen waypaper nwg-look kitty neovim fastfetch --noconfirm
+        yay -S matugen waypaper nwg-look calcure kitty neovim fastfetch --noconfirm
 
         # other dependencies
-        yay -S libadwaita archlinux-xdg-menu wlr-dpms xdg-desktop-portal-wlr bibata-cursor-theme ttf-jetbrains-mono-nerd --noconfirm
+        yay -S libadwaita qt5ct-kde qt6ct-kde archlinux-xdg-menu wlr-dpms xdg-desktop-portal-wlr udev-block-notify bibata-cursor-theme ttf-jetbrains-mono-nerd --noconfirm
         ;;
     ""|[Nn]|[Oo])
         clear
