@@ -61,7 +61,7 @@ case "$answer" in
     ""|[Yy]|[Yy][Ee][Ss])
         cd
         cd My-Mango-Dotfiles
-        cp -r ./.local ./.config $HOME
+        cp -r ./.local ./.config ./Pictures $HOME
         ;;
     ""|[Nn]|[Oo])
         clear
@@ -71,6 +71,6 @@ case "$answer" in
 esac
 
 clear
-printf "All done! Thank you for using my dotfiles!"
+echo "All done! Thank you for using my dotfiles!"
 echo
 echo

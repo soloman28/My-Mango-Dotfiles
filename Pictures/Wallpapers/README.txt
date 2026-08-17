@@ -1,0 +1,1 @@
+Hello! To make this a user choice, you can use this folder to store your wallpapers at ~/Pictures/Wallpapers. The folder name must be case sensitive in order to use wallpaper scripts. Enjoy!
