@@ -1,0 +1,1 @@
+In case this folder doesn't appear on GitHub, this is where current_wall is placed in ~/Pictures/Wallpapers/Assets. Good for swaylock wallpaper.
