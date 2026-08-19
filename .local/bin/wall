@@ -1,0 +1,6 @@
+#!/usr/sh
+
+matugen image "$1" -m dark --source-color-index 0
+notify-send "Wallpaper set!"
+ln -sfn "$1" ~/Pictures/Wallpapers/Assets/current_wall
+awww img -t random --transition-duration 1 $1

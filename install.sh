@@ -30,14 +30,14 @@ case "$answer" in
         yay -S mangowm-git waybar-git awww swaync swayidle swaylock-effects papirus-icon-theme papirus-folders --noconfirm
 
         # desktop tools
-        yay -S matugen waypaper nwg-look calcure kitty neovim fastfetch --noconfirm
+        yay -S dolphin nomacs rofi matugen waypaper nwg-look calcure kitty neovim fastfetch --noconfirm
 
         # other dependencies
-        yay -S libadwaita qt5ct-kde qt6ct-kde archlinux-xdg-menu wlr-dpms xdg-desktop-portal-wlr udev-block-notify bibata-cursor-theme ttf-jetbrains-mono-nerd --noconfirm
+        yay -S libadwaita qt5ct-kde qt6ct-kde archlinux-xdg-menu wlr-dpms xdg-desktop-portal-kde xdg-desktop-portal-wlr udev-block-notify bibata-cursor-theme ttf-jetbrains-mono-nerd --noconfirm
         ;;
     ""|[Nn]|[Oo])
         clear
-        echo "Okay! Onto the next one!"
+        echo "Okay! Assuming you've installed these packages before, onto the next one!"
         sleep 2
         ;;
 esac
