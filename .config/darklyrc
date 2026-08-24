@@ -1,0 +1,11 @@
+[Common]
+ButtonHeight=1
+CornerRadius=1
+ScrollBarTransient=true
+ScrollBarTransientAlwaysShowSlim=true
+ShadowSize=ShadowNone
+ShadowStrength=51
+
+[Style]
+AnimationsDuration=150
+TabsHeight=-20

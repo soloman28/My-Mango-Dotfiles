@@ -9,7 +9,7 @@ font-size: 12px;
 
 window#waybar {
     background-color: @background;
-    color: white;
+    color: @on_surface;
 }
 
 #workspaces {
@@ -26,7 +26,7 @@ window#waybar {
   padding: 0px 10px;
   margin: 0px 0px 0px 0px;
   border-radius: 0px;
-  color: white;
+  color: @on_surface;
 }
 
 #workspaces button.active {
@@ -39,7 +39,7 @@ window#waybar {
     transition: all 150ms ease-out;
     background: @surface_bright;
     border-color: transparent;
-    color: white;
+    color: @on_surface;
 }
 
 #window {
