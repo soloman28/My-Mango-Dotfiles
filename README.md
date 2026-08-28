@@ -30,6 +30,7 @@ cd My-Mango-Dotfiles
 13. fastfetch
 14. dolphin
 15. ttf-jetbrains-mono-nerd
+16. zsh
 
 ### Optional:
 1. gpu-screen-recorder

@@ -6,4 +6,4 @@ Actions=setAsWallpaper
 [Desktop Action setAsWallpaper]
 Name=Set awww As Wallpaper
 Icon=background
-Exec=/bin/sh ~/.local/bin/wall "%f"
+Exec=/bin/sh ~/.local/bin/wal "%f"

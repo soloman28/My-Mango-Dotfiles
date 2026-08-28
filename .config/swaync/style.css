@@ -1,5 +1,9 @@
 @import "colors.css";
 
+:root {
+    --border-radius: 0px;
+}
+
 .notification {
     background: @background;
     padding: 6px 6px 6px 6px;
@@ -14,9 +18,16 @@
 
 .control-center,
 .control-center .notification-row:focus,
-.control-center .notification-row:hover {
+.control-center {
     opacity: 1;
     background: @background;
+    border-radius: 0px;
+    border: 1px solid @primary;
+}
+
+.notification-row:hover {
+    opacity: 1;
+    background: transparent;
     border-radius: 0px;
 }
 
