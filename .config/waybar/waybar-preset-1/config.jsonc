@@ -52,9 +52,9 @@
         "spacing": 6
     },
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
-        "format-bluetooth": "{icon}  {volume}%",
-        "format-muted": "  {volume}%",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-muted": "{volume}%",
         "format-icons": {
 		    "default": ["", "", ""]
         },
@@ -64,8 +64,8 @@
     "network": {
         "interface": "wlp6s0f3u2",
 	      "format": "{ifname}",
-	      "format-wifi": "  {essid}",
-	      "format-ethernet": "  {ifname}",
+	      "format-wifi": "{essid}",
+	      "format-ethernet": "{ifname}",
           "format-disconnected": "Disconnected", //An empty format will hide the module.
 	      "tooltip-format": "{ifname}",
 	      "tooltip-format-wifi":  "{essid}",

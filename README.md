@@ -25,10 +25,11 @@ cd My-Mango-Dotfiles
 7. matugen
 8. rofi
 9. kitty
-10. neovim
-11. fastfetch
-12. dolphin
-13. ttf-jetbrains-mono-nerd
+10. helix
+12. micro
+13. fastfetch
+14. dolphin
+15. ttf-jetbrains-mono-nerd
 
 ### Optional:
 1. gpu-screen-recorder

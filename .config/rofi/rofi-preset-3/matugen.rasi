@@ -1,0 +1,18 @@
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Colors
+ **/
+
+@theme "colors.rasi"
+
+* {
+    background:     @surface;
+    background-alt: @surface-container;
+    foreground:     @on-surface;
+    selected:       @primary;
+    active:         @primary;
+    urgent:         @error;
+}

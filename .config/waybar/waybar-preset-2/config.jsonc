@@ -1,0 +1,108 @@
+{
+    "layer": "top",
+
+    "modules-left": ["mango/workspaces", "mango/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["battery", "bluetooth", "network", "pulseaudio", "custom/clipboard", "custom/notification", "tray", "custom/power"],
+
+    "mango/workspaces": {
+        "on-click": "activate",
+        "on-scroll-up": "mmsg dispatch viewtoleft",
+        "on-scroll-down": "mmsg dispatch viewtoright"
+    },
+
+    "mango/window": {
+        "max-length": 40,
+        "escape": true,
+        "tooltip": true
+    },
+    "battery": {
+        "interval": 60,
+        "format": "BAT: {capacity}%",
+    },
+    "clock": {
+        "format": "{:%d %b %H:%M}",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "calendar": {
+            "mode-mon-col"     : 3,
+            "weeks-pos"        : "right",
+            "first-day-of-week": 1,
+            "on-scroll"        : 1,
+            "on-click-right"   : "mode",
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        },
+        "on-click": "kitty calcure"
+    },
+    "tray": {
+        "spacing": 6
+    },
+    "pulseaudio": {
+        "format": "VOL: {volume}%",
+        "format-bluetooth": "VOL: {volume}%",
+        "format-muted": "VOL: MUTED",
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    },
+    "network": {
+        "interface": "wlp6s0f3u2",
+	      "format": "{ifname}",
+	      "format-wifi": "WIFI: CONNECTED",
+	      "format-ethernet": "NET: {ifname}",
+          "format-disconnected": "WIFI: DISCONNECTED", //An empty format will hide the module.
+	      "tooltip-format": "{ifname}",
+	      "tooltip-format-wifi":  "{essid}",
+	      "tooltip-format-ethernet": "{ifname}",
+	      "tooltip-format-disconnected": "DISCONNECTED",
+	      "max-length": 40,
+	      "on-click": "nmrs"
+    },
+    "bluetooth": {
+        "format": "BT: {num_connections}",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": "BT: {num_connections}",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "blueman-manager"
+    },
+    "custom/clipboard": {
+        "format": "CLIP",
+        "on-click": "nwg-clipman"
+    },
+    "custom/notification": {
+        "tooltip": true,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": "NOTIF: HAS",
+            "none": "NOTIF: EMPTY",
+            "dnd-notification": "NOTIF: DND",
+            "dnd-none": "NOTIF: DND",
+            "inhibited-notification": "NOTIF: INHIBIT",
+            "inhibited-none": "NOTIF: INHIBIT",
+            "dnd-inhibited-notification": "NOTIF: INHIBIT",
+            "dnd-inhibited-none": "NOTIF: INHIBIT"
+      },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+   },
+   "custom/power": {
+        "format": "<span size='14pt'>󰐥</span>",
+        "on-click": "wlogout",
+        "tooltip": false
+   },
+}

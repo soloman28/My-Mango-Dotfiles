@@ -5,11 +5,11 @@
 
 * {
     bg0:    @surface;
-    bg1:    @surface-container;
-    bg2:    @surface-container-high;
-    bg3:    @surface-bright;
+    bg1:    @surface;
+    bg2:    @surface;
+    bg3:    @primary;
     fg0:    @on-surface;
     fg1:    @on-surface;
     fg2:    @on-surface;
-    fg3:    @surface-bright;
+    fg3:    @outline;
 }

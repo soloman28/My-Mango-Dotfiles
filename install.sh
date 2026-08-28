@@ -30,7 +30,7 @@ case "$answer" in
         yay -S mangowm-git waybar-git awww swaync swayidle swaylock-effects papirus-icon-theme papirus-folders --noconfirm
 
         # desktop tools
-        yay -S dolphin nomacs rofi matugen waypaper nwg-look calcure kitty neovim fastfetch --noconfirm
+        yay -S dolphin nomacs rofi matugen waypaper nwg-look calcure kitty helix micro fastfetch --noconfirm
 
         # other dependencies
         yay -S libadwaita qt5ct-kde qt6ct-kde archlinux-xdg-menu wlr-dpms xdg-desktop-portal-kde xdg-desktop-portal-wlr udev-block-notify bibata-cursor-theme ttf-jetbrains-mono-nerd --noconfirm

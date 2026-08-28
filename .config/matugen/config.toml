@@ -19,6 +19,10 @@ input_path = "~/.config/matugen/templates/colors.css"
 output_path = "~/.config/swaync/colors.css"
 post_hook = "swaync-client -rs"
 
+[templates.waterfox-website-colors]
+input_path = "~/.config/matugen/templates/firefox-colors.css"
+output_path = "~/.waterfox/d51tt1ly.default-release/chrome/colors.css"
+
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk-colors.css'
 output_path = '~/.config/gtk-3.0/colors.css'
@@ -46,10 +50,13 @@ input_path = '~/.config/matugen/templates/kitty-colors.conf'
 output_path = '~/.config/kitty/themes/Matugen.conf'
 post_hook = "kitty +kitten themes --reload-in=all Matugen"
 
-[templates.neovim]
-input_path = "~/.config/matugen/templates/nvim-colors.json"
-output_path = "~/.config/nvim/themes/nvim-colors.json"
-post_hook = "pkill -SIGUSR1 nvim"
+[templates.helix]
+input_path = '~/.config/matugen/templates/helix.toml'
+output_path = '~/.config/helix/themes/matugen.toml'
+
+[templates.micro]
+input_path = '~/.config/matugen/templates/micro.micro'
+output_path = '~/.config/micro/colorschemes/matugen.micro'
 
 [templates.wlogout]
 input_path = '~/.config/matugen/templates/colors.css'

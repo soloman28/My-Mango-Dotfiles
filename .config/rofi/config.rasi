@@ -3,8 +3,14 @@
 
 @theme "rounded-gray-dark.rasi"
 
+configuration {
+    modi:                       "drun";
+    show-icons:                 false;
+    display-drun:               "";
+}
+
 * {
-    font:   "JetBrainsMono Nerd Font 12";
+    font:   "JetBrainsMono Nerd Font Propo 12";
 
     background-color:   transparent;
     text-color:         @fg0;
@@ -19,6 +25,8 @@ window {
     y-offset:       calc(50% - 176px);
     width:          480;
     border-radius:  0px;
+    border: 1px;
+    border-color: @primary;
 
     background-color:   @bg0;
 }
@@ -85,6 +93,10 @@ element alternate active {
 
 element selected normal, element selected active {
     background-color:   @bg3;
+}
+
+element selected {
+    text-color: @bg0;
 }
 
 element-icon {
