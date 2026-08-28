@@ -31,6 +31,7 @@ cd My-Mango-Dotfiles
 14. dolphin
 15. ttf-jetbrains-mono-nerd
 16. zsh
+17. cava
 
 ### Optional:
 1. gpu-screen-recorder

@@ -3,12 +3,17 @@
 [templates.mango]
 input_path = '~/.config/matugen/templates/mango.conf'
 output_path = '~/.config/mango/colors.conf'
-post_hool = 'mmsg dispatch reload_config'
+post_hook = 'mmsg dispatch reload_config'
 
 [templates.waybar]
 input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/waybar/colors.css'
 post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.cava]
+input_path = '~/.config/matugen/templates/cava-colors.ini'
+output_path = '~/.config/cava/themes/matugen'
+post_hook = 'pkill -USR1 cava'
 
 [templates.rofi]
 input_path = '~/.config/matugen/templates/rofi-colors.rasi'
