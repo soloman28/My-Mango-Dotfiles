@@ -58,7 +58,7 @@ case "$answer" in
     ""|[Yy]|[Yy][Ee][Ss])
         cd
         cd My-Mango-Dotfiles
-        cp -r ./.local ./.config ./Pictures $HOME
+        cp -r ./.local ./.config ./Pictures ./.bashrc ./.zshrc $HOME
         ;;
     ""|[Nn]|[Oo])
         clear
