@@ -4,7 +4,7 @@
     "logo": {
         "type": "small",
         "padding": {
-            "top": 0
+            "top": 1
         }
     },
     "display": {

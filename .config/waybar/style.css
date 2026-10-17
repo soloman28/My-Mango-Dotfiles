@@ -1,116 +1,165 @@
 @import "colors.css";
 
 * {
-/* `otf-font-awesome` is required to be installed for icons */
-font-family: JetBrainsMono Nerd Font;
-font-weight: normal;
-font-size: 12px;
+    font-family: JetBrainsMono Nerd Font Propo;
+    font-weight: 900;
+    font-size: 12px;
 }
 
 window#waybar {
     background-color: @background;
     color: @on_surface;
+    border-bottom: 1px solid @primary;
 }
 
 #workspaces {
-  transition: all 150ms ease-out;
-  border-radius: 0px;
-  padding: 0px 0px;
-  background: @surface_container;
-  margin: 6px 6px 6px 6px;
+    transition: all 150ms ease-out;
+    border-radius: 0px;
+    padding: 0px 0px;
+    background: @background;
+    margin: 0px 6px 1px 6px;
 }
 
 #workspaces button {
-  transition: all 150ms ease-out;
-  min-width: 5px;
-  padding: 0px 10px;
-  margin: 0px 0px 0px 0px;
-  border-radius: 0px;
-  color: @on_surface;
+    transition: all 150ms ease-out;
+    min-width: 5px;
+    padding: 0px 10px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px;
+    color: @outline;
 }
 
 #workspaces button.active {
-  transition: all 150ms ease-out;
-  background: @primary;
-  color: @background;
+    transition: all 150ms ease-out;
+    background: @background;
+    color: @primary;
 }
 
 #workspaces button:hover {
     transition: all 150ms ease-out;
-    background: @surface_bright;
+    background: @background;
     border-color: transparent;
-    color: @on_surface;
+    color: @primary;
 }
 
 #window {
-  border-radius: 0px;
-  padding: 0px 8px;
-  background: @surface_container;
-  margin: 6px 0px 6px 0px;
+    border-radius: 0px;
+    padding: 0px 6px;
+    background: @background;
+    margin: 0px 0px 1px 0px;
 }
 
 #clock {
-  border-radius: 0px;
-  padding: 6px 6px;
-  background: @surface_container;
-  margin: 6px 6px 6px 6px;
+    border-radius: 0px;
+    padding: 0px 6px;
+    background: @background;
+    margin: 0px 0px 1px 0px;
+}
+
+#clock:hover {
+    transition: all 150ms ease-out;
+    color: @primary;
 }
 
 #battery {
-  border-radius: 0px;
-  padding: 6px 6px;
-  background: @surface_container;
-  margin: 6px 6px 6px 6px;
+    border-radius: 0px;
+    padding: 0px 8px;
+    background: @background;
+    margin: 12px 0px;
+    border-right: 2px solid @on_surface;
+}
+
+#battery:hover {
+    transition: all 150ms ease-out;
+    color: @primary;
 }
 
 #bluetooth {
-  border-radius: 0px;
-  padding: 0px 6px;
-  background: @surface_container;
-  margin: 6px 0px 6px 0px;
+    border-radius: 0px;
+    padding: 0px 8px;
+    background: @background;
+    margin: 12px 0px;
+    border-right: 2px solid @on_surface;
+}
+
+#bluetooth:hover {
+    transition: all 150ms ease-out;
+    color: @primary;
 }
 
 #network {
-  border-radius: 0px;
-  padding: 6px 6px;
-  background: @surface_container;
-  margin: 6px 6px 6px 6px;
+    border-radius: 0px;
+    padding: 0px 8px;
+    background: @background;
+    margin: 12px 0px;
+    border-right: 2px solid @on_surface;
+}
+
+#network:hover {
+    transition: all 150ms ease-out;
+    color: @primary;
 }
 
 #pulseaudio {
-  border-radius: 0px;
-  padding: 6px 6px;
-  background: @surface_container;
-  margin: 6px 6px 6px 0px;
+    border-radius: 0px;
+    padding: 0px 8px;
+    background: @background;
+    margin: 12px 0px;
+    border-right: 2px solid @on_surface;
+}
+
+#pulseaudio:hover {
+    transition: all 150ms ease-out;
+    color: @primary;
 }
 
 #custom-clipboard {
-  border-radius: 0px;
-  min-width: 12px;
-  padding: 0px 8px;
-  background: @surface_container;
-  margin: 6px 0px 6px 0px;
+    border-radius: 0px;
+    padding: 0px 8px;
+    background: @background;
+    margin: 12px 0px;
+    border-right: 2px solid @on_surface;
+}
+
+#custom-clipboard:hover {
+    transition: all 150ms ease-out;
+    color: @primary;
 }
 
 #custom-notification {
-  border-radius: 0px;
-  min-width: 12px;
-  padding: 0px 8px;
-  background: @surface_container;
-  margin: 6px 6px 6px 0px;
+    border-radius: 0px;
+    padding: 0px 8px;
+    background: @background;
+    margin: 12px 0px;
+    border-right: 2px solid @on_surface;
+}
+
+#custom-notification:hover {
+    transition: all 150ms ease-out;
+    color: @primary;
 }
 
 #tray {
-  border-radius: 0px;
-  padding: 6px 6px;
-  background: @surface_container;
-  margin: 6px 6px 6px 0px;
+    border-radius: 0px;
+    padding: 0px 8px;
+    background: @background;
+    margin: 12px 0px;
+    border-right: 2px solid @on_surface;
+}
+
+#tray:hover {
+    transition: all 150ms ease-out;
+    color: @primary;
 }
 
 #custom-power {
-  border-radius: 0px;
-  min-width: 12px;
-  padding: 0px 8px;
-  background: @surface_container;
-  margin: 6px 6px 6px 0px;
+    border-radius: 0px;
+    padding: 0px 8px;
+    background: @background;
+    margin: 0px 4px 1px 2px;
+}
+
+#custom-power:hover {
+    transition: all 150ms ease-out;
+    color: @primary;
 }

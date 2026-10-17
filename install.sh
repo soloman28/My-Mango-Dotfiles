@@ -27,7 +27,7 @@ case "$answer" in
         yay -S blueman nmrs nwg-clipman pavucontrol --noconfirm
 
         # desktop
-        yay -S mangowm-git waybar-git awww swaync swayidle swaylock-effects papirus-icon-theme papirus-folders --noconfirm
+        yay -S mangowm waybar-git awww swaync swayidle swaylock-effects papirus-icon-theme papirus-folders --noconfirm
 
         # desktop tools
         yay -S dolphin nomacs rofi matugen waypaper nwg-look calcure kitty helix micro fastfetch --noconfirm
@@ -58,7 +58,7 @@ case "$answer" in
     ""|[Yy]|[Yy][Ee][Ss])
         cd
         cd My-Mango-Dotfiles
-        cp -r ./.local ./.config ./Pictures ./.bashrc ./.zshrc $HOME
+        cp -r ./.cache ./.local ./.config ./Pictures ./.bashrc ./.zshrc $HOME
         ;;
     ""|[Nn]|[Oo])
         clear

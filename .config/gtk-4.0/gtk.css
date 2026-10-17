@@ -1,1 +1,4 @@
-/usr/share/themes/adw-gtk3-dark/gtk-4.0/gtk.css
+@import url('libadwaita.css');
+@import url('libadwaita-tweaks.css');
+@import 'colors.css';
+

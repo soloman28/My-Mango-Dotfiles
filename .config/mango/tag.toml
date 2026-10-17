@@ -1,0 +1,4 @@
+# tags rule
+[[rule.tag_rule]]
+id = "*"
+layout_name = "dwindle"

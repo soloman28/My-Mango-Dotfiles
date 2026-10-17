@@ -1,0 +1,37 @@
+# Window Rules
+
+[[rule.window_rule]]
+is_floating = 1
+app_id = "^waterfox$"
+title = "About Waterfox"
+
+[[rule.window_rule]]
+is_floating = 1
+app_id = "^waterfox$"
+title = "Picture-in-Picture"
+
+[[rule.window_rule]]
+is_floating = 1
+app_id = "dolphin"
+title = "Extract"
+
+[[rule.window_rule]]
+is_floating = 1
+app_id = "ark"
+title = "Extract"
+
+[[rule.window_rule]]
+is_floating = 1
+app_id = "waypaper"
+
+[[rule.window_rule]]
+is_floating = 1
+app_id = "nmrs"
+
+[[rule.window_rule]]
+is_floating = 1
+app_id = "pavucontrol"
+
+[[rule.window_rule]]
+is_floating = 1
+app_id = "blueman-manager"

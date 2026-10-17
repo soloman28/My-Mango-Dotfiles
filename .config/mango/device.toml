@@ -1,0 +1,12 @@
+# [[rule.device_rule]]
+# name = "AT Translated Set 2 keyboard"
+# kb_layout = "us"
+#
+[[rule.device_rule]]
+type = "pointer"
+accel_profile = "flat"
+#
+# [[rule.device_rule]]
+# type = "trackpad"
+# tap_to_click = 1
+# natural_scrolling = 0

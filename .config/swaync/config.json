@@ -4,9 +4,9 @@
 
 	"control-center-width": 400,
 	"control-center-height": 600,
-	"control-center-margin-top": 6,
+	"control-center-margin-top": 4,
 	"control-center-margin-bottom": 0,
-	"control-center-margin-right": 6,
+	"control-center-margin-right": 4,
 	"control-center-margin-bottom": 0,
 	"fit-to-screen": false,
 	"layer-shell-cover-screen": true,
@@ -45,13 +45,9 @@
 		"dnd": {
 			"text": "Do Not Disturb"
 		},
-		"label": {
-			"max-lines": 5,
-			"text": "Label Text"
-		},
 		"mpris": {
-		"image-size": 32,
-		"autohide": true
+			"image-size": 32,
+			"autohide": true
 		}
 	}
 }

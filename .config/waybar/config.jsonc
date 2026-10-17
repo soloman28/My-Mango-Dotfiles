@@ -18,11 +18,7 @@
     },
     "battery": {
         "interval": 60,
-        "format": "{icon} {capacity}%",
-        "format-icons": {
-            "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-            "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
-        }
+        "format": "BAT: {capacity}%",
     },
     "clock": {
         "format": "{:%d %b %H:%M}",
@@ -52,53 +48,51 @@
         "spacing": 6
     },
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
-        "format-bluetooth": "{icon}  {volume}%",
-        "format-muted": "  {volume}%",
-        "format-icons": {
-		    "default": ["", "", ""]
-        },
+        "format": "VOL: {volume}%",
+        "format-bluetooth": "VOL: {volume}%",
+        "format-muted": "VOL: MUTED",
         "scroll-step": 1,
         "on-click": "pavucontrol"
     },
     "network": {
         "interface": "wlp6s0f3u2",
 	      "format": "{ifname}",
-	      "format-wifi": "  {essid}",
-	      "format-ethernet": "  {ifname}",
-          "format-disconnected": "Disconnected", //An empty format will hide the module.
+	      "format-wifi": "WIFI: CONNECTED",
+	      "format-ethernet": "NET: {ifname}",
+          "format-disconnected": "WIFI: DISCONNECTED", //An empty format will hide the module.
 	      "tooltip-format": "{ifname}",
 	      "tooltip-format-wifi":  "{essid}",
 	      "tooltip-format-ethernet": "{ifname}",
-	      "tooltip-format-disconnected": "Disconnected",
+	      "tooltip-format-disconnected": "DISCONNECTED",
 	      "max-length": 40,
 	      "on-click": "nmrs"
     },
     "bluetooth": {
-        "format": "<span size='12pt'></span>",
+        "format": "BT: {num_connections}",
         "format-disabled": "", // an empty format will hide the module
-        "format-connected": " {num_connections}",
+        "format-connected": "BT: {num_connections}",
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "on-click": "blueman-manager"
     },
     "custom/clipboard": {
-        "format": "<span size='12pt'></span>",
-        "on-click": "nwg-clipman"
+        "format": "CLIP",
+        "on-click": "nwg-clipman",
+        "tooltip": false
     },
     "custom/notification": {
         "tooltip": true,
-        "format": "<span size='12pt'>{icon}</span>",
+        "format": "{icon}",
         "format-icons": {
-            "notification": "󱅫",
-            "none": "󰂜",
-            "dnd-notification": "󰂠",
-            "dnd-none": "󰪓",
-            "inhibited-notification": "󰂛",
-            "inhibited-none": "󰪑",
-            "dnd-inhibited-notification": "󰂛",
-            "dnd-inhibited-none": "󰪑"
+            "notification": "NOTIF: HAS",
+            "none": "NOTIF: EMPTY",
+            "dnd-notification": "NOTIF: DND",
+            "dnd-none": "NOTIF: DND",
+            "inhibited-notification": "NOTIF: INHIBIT",
+            "inhibited-none": "NOTIF: INHIBIT",
+            "dnd-inhibited-notification": "NOTIF: INHIBIT",
+            "dnd-inhibited-none": "NOTIF: INHIBIT"
       },
         "return-type": "json",
         "exec-if": "which swaync-client",
@@ -109,7 +103,7 @@
    },
    "custom/power": {
         "format": "<span size='14pt'>󰐥</span>",
-        "on-click": "wlogout",
+        "on-click": "sh ~/.config/rofi/powermenu.sh",
         "tooltip": false
    },
 }
