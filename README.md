@@ -1,7 +1,7 @@
 # My Mango Dotfiles
-Note that I use CachyOS at the time making this dotfile but you can use other Arch distros if you want. Feel free to use my waybar. Enjoy!
+Note that I used CachyOS (Now Arch) at the time making this dotfile but you can use other Arch distros if you want. Feel free to use my waybar. Enjoy!
 
-<img width="1366" height="768" alt="Screenshot_2026-08-14_17-21-10" src="https://github.com/user-attachments/assets/e031716e-9216-4a4a-b03a-05eed28d290e" />
+<img width="1920" height="1080" alt="screenshot_20261017_213243" src="https://github.com/user-attachments/assets/b3fdb96b-773c-41be-a74d-4713a7159f0f" />
 
 ### Installation
 These packages require manual install or yay. If you are okay with it, use the `install.sh` script to install packages and dotfiles for you. This requires a password prompt, so safety first.
@@ -44,7 +44,7 @@ cd My-Mango-Dotfiles
 4. papirus-folders
 5. udev-block-notify
 6. wlr-dpms
-7. mangowm-git
+7. mangowm
 8. xdg-desktop-portal-wlr
 9. waypaper
 10. nwg-look
