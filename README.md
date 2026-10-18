@@ -33,24 +33,19 @@ cd My-Mango-Dotfiles
 16. zsh
 17. cava
 
-### Optional:
-1. gpu-screen-recorder
-2. gpu-screen-recorder-ui
-
 ### Requires yay or manual install (For up-to-date reasons)
-1. qt5ct-kde
-2. qt6ct-kde
-3. archlinux-xdg-menu
-4. papirus-folders
-5. udev-block-notify
-6. wlr-dpms
-7. mangowm
-8. xdg-desktop-portal-wlr
-9. waypaper
-10. nwg-look
-11. nwg-clipman
-12. nmrs
-13. calcure
-14. waybar-git
-15. bibata-cursor-theme
-16. nomacs
+1. qtengine
+2. archlinux-xdg-menu
+3. papirus-folders
+4. udev-block-notify
+5. wlr-dpms
+6. mangowm
+7. xdg-desktop-portal-wlr
+8. waypaper
+9. nwg-look
+10. nwg-clipman
+11. nmrs
+12. calcure
+13. waybar-git
+14. bibata-cursor-theme
+15. nomacs
